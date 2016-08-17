@@ -1,0 +1,62 @@
+.content{
+	max-width: 55em;
+	margin: 0px auto;
+}
+
+@include breakpoint($medium-2){
+	.content{
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+.highlight{
+	width: 17em;
+	border-top: 3px solid $blue;
+	border-bottom: 3px solid $blue;
+	float: right;
+	padding: 1em 0em;
+	margin: 0em 0em 0em 1.3em;
+}
+
+.section-header h2{
+	margin-bottom: .25em;
+	margin-top: .75em;
+	font-size: 2.5em;
+
+}
+
+.section-number{
+	border: 1px solid $black;
+	border-radius: 3em;
+	display: block;
+	float: left;
+	font-size: .8em;
+	height: 2.25em;
+	width: 2.25em;
+	text-align: center;
+	padding: .35em .5em;
+	margin-right: .5em;
+	margin-top: -.25em;
+}
+
+.datagrid{
+	margin-top: 1em;
+	table{
+		border-spacing: .5em;
+		border-collapse: collapse;
+		border: 10px solid $blue;
+		border-radius: 8em;
+		width: 100%;
+	}
+	th, td{
+		padding: 1em;
+		border: 2px solid $blue;
+		
+	}
+	th{
+		background-color: $blue;
+		color: white;
+	}
+}
+
