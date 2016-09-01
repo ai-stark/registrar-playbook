@@ -37,18 +37,18 @@
 	background-size: contain;
 }
 
+
 .print-btn{
 	background-image: url("/assets/img/icon-print.png");
-	//background-image: url("/assets/img/social/icon-twitter.png");
 	background-repeat: no-repeat;
-	background-position: 5%;
-	
 	border: 2px solid transparent;
 	font-family: "sofia-pro",sans-serif;
 	border-radius: .25em;
 	padding-left: 1.75em;
 	padding-right: .25em;
 	text-decoration: none;
+	position: relative;
+	top: -0.5em;
 }
 
 .print-btn:hover{

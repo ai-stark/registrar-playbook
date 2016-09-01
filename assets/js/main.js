@@ -23,7 +23,45 @@ $(window).on('load', function(){
 	});
 
 
+	var sidebar = $('.sidebar');
+	
+	var overlay = $('.overlay');
+	$('.btn-touch').on('click', function(){
+		if (sidebar.hasClass('closed')){ 
+			sidebar.removeClass('closed');
+			sidebar.addClass('open');
+			overlay.addClass('on');
 
+
+		}else{
+			sidebar.removeClass('open');
+			sidebar.addClass('closed');
+			overlay.removeClass('on');
+		}
+	});
+
+
+		
+	var subnavs = $('.subnav li');
+	$(subnavs).on('click', function(){
+		if ($('.mobile-menu').is(':visible')) {
+			if (sidebar.hasClass('closed')){ 
+				sidebar.removeClass('closed');
+				sidebar.addClass('open');
+				overlay.addClass('on');
+
+
+			}else{
+				sidebar.removeClass('open');
+				sidebar.addClass('closed');
+				overlay.removeClass('on');
+			}
+		}
+	});
+		 
+	
+		
+	
 
 
 

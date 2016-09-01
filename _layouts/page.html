@@ -17,8 +17,10 @@ layout: default
 		
 	</header>
 -->
+
+
 	<div class="wrapper">
-		<div class="sidebar">
+		<div class="sidebar closed">
 			<div class="header">
 				<div class="site-name">
 					<a href="{{site.baseurl}}/">
@@ -40,7 +42,14 @@ layout: default
 			{% include nav.html %}
 
 		</div>
-		<div class="main">
+		<div class="main page-content" >
+			<div class="overlay"></div>
+
 			{{ content }}
+
+
+
+			{% include footer.html %}
+			
 		</div>
 	</div>

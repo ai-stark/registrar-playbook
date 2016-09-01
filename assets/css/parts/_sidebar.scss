@@ -1,5 +1,27 @@
+/* .header {
+    box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
+    position: fixed;
+    height: 9.5em;
+    left: 0;
+    top: 3em;
+    width: 20.5em;
+} */
+
+.header .site-name{
+	display: none;
+}
+
+
+
+@include breakpoint($large){
+	.header .site-name{
+		display: block;
+	}
+
+}
+
 .nav li{
-	border-bottom: 1px solid #e4e4e5;
+	border-bottom: 1px solid $gray-lighter;
     position: relative;
     a{
     	display: block;
@@ -16,18 +38,28 @@
 	background-color: $green-light;
 }
 
-
 .nav{
 	overflow: auto;
 	position: fixed;
 	width: 20.5em;
 	bottom: 0;
-	top: 9.5em;
+	top: 6em;
 	ul.page-nav{
 		font-family: "raleway",sans-serif;
 		margin-bottom: 1em;
 	}
 }
+
+@include breakpoint($large){
+	.nav{
+		top: 9.5em;
+	}
+}
+
+
+
+
+
 
 .sidebar{
 	width: 20.5em;
@@ -35,6 +67,9 @@
 	position: fixed;
 	background-color: #FFFFFF;
 	box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
+	z-index: 30;
+	left: 0;
+	transition: left .15s ease;
 	.site-name{
 		padding: 1em;
 		img{
@@ -57,6 +92,22 @@
 		}
 	}
 }
+
+
+
+
+.sidebar.closed{
+	left: -20.5em;
+	transition: left .15s ease;
+}
+
+@include breakpoint($large){
+	.sidebar.closed{
+		display: block;
+		left: 0;
+	}
+}
+
 
 .search-bar-wrap{
 	background-color: #FFFFFF;
@@ -113,6 +164,11 @@
 	border-radius: .25em;
 	cursor: pointer;
 	background-color: #FFFFFF;
+	
+}
+
+.btn:hover{
+	transition: all .4s;
 }
 
 .arrow-img-down{

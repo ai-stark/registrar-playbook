@@ -1,6 +1,8 @@
 .content{
 	max-width: 55em;
 	margin: 0px auto;
+	padding-left: .75em;
+	padding-right: .75em;
 }
 
 @include breakpoint($medium-2){
@@ -58,5 +60,11 @@
 		background-color: $blue;
 		color: white;
 	}
+}
+
+
+
+.embeded-video{
+	padding: 1em 0;
 }
 

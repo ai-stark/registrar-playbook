@@ -1,7 +1,14 @@
 .main{
 	height: 1500px;
-	margin-left: 20.5em;
+	//margin-left: 20.5em;
 }
+
+@include breakpoint($large){
+	.main{
+		margin-left: 20.5em;
+	}
+}
+
 
 .billboard{
 	background-image: url('http://placehold.it/1400x700');
