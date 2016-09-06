@@ -59,12 +59,42 @@ $(window).on('load', function(){
 		}
 	});
 		 
-	
 		
+});
+
+
+
+
+function pausePlayingVideo(clicked){
+	var videos = $('video');
+	videos.each(function(){
+		if (this.paused == false){
+			if(this !== videos[clicked]){
+				this.pause();
+			}
+		}
+	});
+}
+
+
+
+var videoButtons = $('.video-buttons a');
+videoButtons.on('click', function(event){
+	event.preventDefault();
+
+	videoButtons.removeClass('active');
+	$(this).addClass('active');
+
+	var clicked = $(this).data('button');
+	pausePlayingVideo(clicked);
+
+	//$('.video-slideout').css('display', 'block');
+	//$('.video-slideout').css('opacity', '1');
 	
+	$('.video-slideout div').css('position', 'absolute');
+	$('.video-slideout div').css('display', 'none');
 
-
-
-	
+	$('#video' + clicked).css('position', 'static');
+	$('#video' + clicked).css('display', 'block');
 });
 

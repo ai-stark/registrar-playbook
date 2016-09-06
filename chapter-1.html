@@ -14,10 +14,12 @@ subnav:
 - section-num: 1.4 
   section-title: This is the title for Section 1.4
 navigation_weight: 2
-video1: DTM3.mp4
-video1alt: DTM3.webm
-video2: DTMOne.mp4
-video3: DTMTwo.mp4
+video3: DTM3.mp4
+video3alt: DTM3.webm
+video1: DTMOne.mp4
+video1alt: DTMOne.webm
+video2: DTMTwo.mp4
+video2alt: DTMTwo.webm
 ---
 
 
@@ -92,17 +94,45 @@ video3: DTMTwo.mp4
 				<p>As advanced as technology is today, making decisions about matching patient data can be incredibly difficult when patient demographic data is not captured correctly and consistently.  And incorrectly matching patient records together or creating duplicate records can have significant consequences, particularly for patients.</p>
 
 				<p>Review each of the following scenarios to learn about some of the patient safety issues that can occur when patient records are not matched due to low quality patient demographic data.</p>
-
-				<div class="embeded-video">
-
-
-					
-					<video width="100%"  controls>
-					  <source type="video/mp4" src="{{site.baseurl}}/assets/video/{{ page.video1 }}">
-					  <source type="video/webm" src="{{site.baseurl}}/assets/video/{{ page.video1alt }}">
-					  Your browser does not support the video tag.
-					</video>
 				
+				<div class="row">
+					<div class="video-buttons">
+						<div class="grid-4">
+							<a href="" class="btn btn-scenario active" data-button="0">Scenario 1</a>
+						</div>
+						<div class="grid-4">
+							<a href="" class="btn btn-scenario" data-button="1">Scenario 2</a>
+						</div>
+						<div class="grid-4">
+							<a href="" class="btn btn-scenario" data-button="2">Scenario 3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-slideout">
+
+					<div class="embeded-video" id="video0">
+						<video width="100%"  controls poster="{{site.baseurl}}/assets/img/CoverVideo01.jpg">
+						  <source type="video/mp4" src="{{site.baseurl}}/assets/video/{{ page.video1 }}">
+						  <source type="video/webm" src="{{site.baseurl}}/assets/video/{{ page.video1alt }}">
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="embeded-video" id="video1">
+						<video width="100%"  controls poster="{{site.baseurl}}/assets/img/CoverVideo02.jpg">
+						  <source type="video/mp4" src="{{site.baseurl}}/assets/video/{{ page.video2 }}">
+						  <source type="video/webm" src="{{site.baseurl}}/assets/video/{{ page.video2alt }}">
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="embeded-video" id="video2">
+						<video width="100%"  controls poster="{{site.baseurl}}/assets/img/CoverVideo03.jpg">
+						  <source type="video/mp4" src="{{site.baseurl}}/assets/video/{{ page.video3 }}">
+						  <source type="video/webm" src="{{site.baseurl}}/assets/video/{{ page.video3alt }}">
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+
 				</div>
 
 <!--
