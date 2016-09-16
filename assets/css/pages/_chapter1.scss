@@ -5,6 +5,12 @@
 	background-size: cover;
 }
 
+@include breakpoint($medium-2){
+	.chapter1-billboard{
+		background-position: center 10%;
+	}	
+}
+
 .content{
 	max-width: 55em;
 	margin: 0px auto;
