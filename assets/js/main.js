@@ -71,6 +71,8 @@ function pausePlayingVideo(clicked){
 		if (this.paused == false){
 			if(this !== videos[clicked]){
 				this.pause();
+				this.currentTime = 0;
+				this.load();
 			}
 		}
 	});
