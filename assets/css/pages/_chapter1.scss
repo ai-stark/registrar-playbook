@@ -46,7 +46,7 @@
 		padding: 1em 0;
 		margin: 0 0 0em 1.3em;
 		p{
-			margin-bottom: 1em;
+			margin: 0;
 		}
 	}	
 }
@@ -74,7 +74,7 @@
 
 .datagrid{
 	margin-top: 1em;
-	overflow-x: scroll;
+
 	table{
 		border-spacing: .5em;
 		border-collapse: collapse;
@@ -129,6 +129,34 @@
 	display: table;
 	clear: both;
 }
+
+
+.video-buttons .grid-4{
+	padding-right: 0;
+	padding-bottom: .5em;
+}
+
+@include breakpoint($medium){
+	.video-buttons .grid-4{
+		float: left; 
+        min-height: 1px; 
+        width: 33.333%; 
+        position: relative;
+		padding: 0 1em;
+	}
+}
+
+
+@include breakpoint($medium-2){
+	.video-buttons .grid-4{
+		padding-right: 1em;
+		padding-bottom: 0;
+	}
+}
+
+
+
+
 
 #video1{
 	position: absolute;
