@@ -74,12 +74,14 @@
 
 .datagrid{
 	margin-top: 1em;
+	overflow-x: scroll;
 	table{
 		border-spacing: .5em;
 		border-collapse: collapse;
 		border: 10px solid $blue;
 		border-radius: 8em;
 		width: 100%;
+
 	}
 	th, td{
 		padding: 1em;
