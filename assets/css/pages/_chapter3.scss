@@ -1,6 +1,67 @@
 .chapter3-billboard{
-	background-image: url('https://placehold.it/1400x700');
-	background-position: center 10%;
+	background-image: url('../../assets/img/bg-chapter-3.jpg');
+	background-position: 43% 10%;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@include breakpoint($medium-2){
+	.chapter3-billboard{
+		background-position: 10%;
+	}	
+}
+
+.flip3d_y{
+	//width: 270px;
+	height: 15em;
+	margin: 10px;
+	position: relative;
+}
+
+
+
+.flip3d_y > .front{
+	text-align: center;
+	line-height: 13em;
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #fff;
+	width:13em;
+	height:13em;
+	border-radius:50%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	transition: -webkit-transform .3s linear 0s;
+	transition: transform .3s linear 0s;
+}
+
+.flip3d_y > .back{
+	text-align: center;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+	padding:5%;
+	color: white;
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #aaa;
+	width:13em;
+	height:13em;
+	border-radius:50%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-transition: transform .3s linear 0s;
+	transition: transform .3s linear 0s;
+}
+
+.flip3d_y:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+
+.flip3d_y:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
 }

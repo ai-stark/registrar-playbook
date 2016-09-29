@@ -58,6 +58,16 @@ $(window).on('load', function(){
 			}
 		}
 	});
+
+
+	$('#show_ad').on('click', function(){
+		if($('#addresses').css('display') == 'block'){
+			$('#addresses').slideUp('slow');
+		}else{
+			$('#addresses').slideDown('slow');
+		}
+		
+	});
 		 
 		
 });

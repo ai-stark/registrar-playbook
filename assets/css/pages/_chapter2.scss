@@ -1,6 +1,12 @@
 .chapter2-billboard{
-	background-image: url('https://placehold.it/1400x700');
+	background-image: url('../../assets/img/bg-chapter-2.jpg');
 	background-position: center 10%;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@include breakpoint($medium-2){
+	.chapter2-billboard{
+		background-position: center 30%;
+	}	
 }

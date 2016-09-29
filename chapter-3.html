@@ -3,12 +3,20 @@ layout: page
 url: chapter-3
 title: Chapter 3
 slug: chapter-3
-subtitle: Lorem Ipsum
+subtitle: Best Practices for Data Capture by Data Attribute
 billboardClass: chapter3-billboard
 
 subnav:
-- section-num: 3.1 
-  section-title: This is the title for Section 3.1
+- section-num: 3.1
+  section-title: Patient Name
+- section-num: 3.2
+  section-title: Date of Birth (DOB)
+- section-num: 3.3
+  section-title: Address
+- section-num: 3.4
+  section-title: Phone Number
+- section-num: 3.5
+  section-title: Sex and Gender 
 
 navigation_weight: 4
 ---
@@ -18,7 +26,7 @@ navigation_weight: 4
 
 {% include billboard_both.html %}
 
-
+<!--
 <div class="section">
 	<div class="content">
 		<div class="row">
@@ -32,6 +40,7 @@ navigation_weight: 4
 		</div>
 	</div>
 </div>
+-->
 
 
 
@@ -39,7 +48,7 @@ navigation_weight: 4
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<h2><span class="section-number">3.1</span>This is the title for Section 3.1</h2>
+				<h2><span class="section-number">3.1</span>Patient Name</h2>
 			</div>
 		</div>
 	</div>
@@ -49,17 +58,236 @@ navigation_weight: 4
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum unde nisi nam tempore a id sequi modi atque aliquid minus alias nihil, vel ipsa ipsam facilis maxime ab reprehenderit. Reiciendis, voluptas. Maxime debitis et natus iste, quae ullam asperiores alias, blanditiis nihil eligendi repellendus obcaecati incidunt consequuntur, animi itaque earum! Natus corporis ipsa fugiat placeat, harum reprehenderit ex itaque.</p>
+				<span class="highlight"><p>Patient name includes a set of words by which a person is known, i.e. First, Middle, and Last or Family Name. A legal name identifies a person for administrative and other official purposes, like insurance payments.  It is generally the name that appears on a person’s birth certificate but may change over time, as individuals adopt nicknames.</p></span>
 				
-				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora quisquam quo earum quia delectus, distinctio itaque doloribus soluta molestias nemo, quod labore, cupiditate optio odio quis explicabo voluptatum omnis?</span>
-				<span>Velit quae soluta distinctio voluptates vitae dolorum corrupti ullam quibusdam esse omnis, fugit, temporibus optio neque dicta vel dolores, eaque, aspernatur tempore deserunt recusandae maiores inventore aliquam. Laborum, id, saepe.</span>
-				<span>Cumque modi vero neque fugiat molestiae vel quisquam iste eligendi deleniti sed debitis quas quis cum quod veniam quaerat esse doloremque, labore, explicabo nulla incidunt perferendis unde placeat. Voluptas, quo?</span>
-				<span>Nulla architecto molestiae nisi delectus ad blanditiis optio voluptate cupiditate iste ut nobis odit reiciendis voluptatem quod quos aspernatur laudantium numquam nesciunt, eum sunt porro, expedita! Nulla blanditiis expedita explicabo.</span>
-				<span>Assumenda blanditiis optio, saepe sed deleniti excepturi, cumque, pariatur totam eos maiores cupiditate? Quo veritatis tempore nostrum nesciunt aspernatur ex, optio fugiat maiores ducimus accusamus, non, magnam eos voluptatum? Dolorum.</span>
-				<span>Quas soluta, eos doloribus molestiae nobis quaerat alias hic. Esse sapiente sit commodi, fuga atque quia neque, reiciendis. Consequuntur optio quaerat non minima itaque aut culpa officia quam eius consectetur.</span></p>
+				<h3>Patient Name data may be stored in the following five fields:</h3>
+				<ul>
+					<li>First name/given name: this should be the patient’s legal name as it appears on their insurance card.</li>
+					<li>Last name/surname:  Generational titles such as Jr, Sr, III are considered part of the last name, and should be included in this field.</li>
+					<li>Middle name or initial</li>
+					<li>Suffix – Should be used to indicate educational degrees and accreditation. Common suffixes include MD, DO, CRNP, PhD.</li>
+					<li>Prefix - Should be used for professional or religious titles or honorifics such as:  Doctor, Sister, Father, Professor (could routinely be entered using typical 2-character designations – Dr, Sr, Fr).  It is not necessary to collect common prefixes such as Mr, Mrs, Ms, and Miss.</li>
+				</ul>
+
+				<h3>Dos and Don'ts for recording patient name</h3>
+				<ul>
+					<li>DO use the patient’s government-issued photo ID to collect the patient’s Name, or use the patient’s insurance card to record the legal name.</li>
+					<li>DO ask the patient for their middle name and record at least his/her middle initial if they have one.</li>
+					<li>When a patient’s first name is an initial DO capture just the initial in the first name field and use the Middle name field for a full name.</li>
+					<li>DO capture the patient’s preferred name, if she/he has one.  DO NOT capture the patient’s preferred name in the First Name field, but in a field for preferred name if one exists.</li>
+					<li>DO include a suffix, such as Sr, Jr, II, etc. in the Last Name field.  DO NOT include a suffix, such as MD, DO, RN, etc. in the Last Name field.</li>
+					<li>Do capture punctuation commonly used in names such as hyphens (-) and apostrophes (’).</li>
+					<li>If an existing patient gives a name that does not match an existing record DO ask the patient: “Are there any former legal names or past or present nicknames for you?”</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<div class="section-header" id="section3.2" name="section3.2">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<h2><span class="section-number">3.2</span>Date of Birth (DOB)</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<span class="highlight"><p>The reported day, month, and year of birth for a patient</p></span>
+				<p>DOB should be recorded for all patients, even if the patient does not know their DOB.</p>
+
+				<h3>Dos and Don’ts for recording DOB</h3>
+				<ul>
+					<li>DO record DOB in the following format: MM-DD-YYYY</li>
+					<li>If the full DOB is unknown or the patient is unresponsive, and a representative is not immediately available, DO record the DOB in a standard format, such as 01-01-1880.</li>
+					<li>If only the year is known, DO record the month and day in a standard format, such as 01-01-yyyy (year provided by patient).</li>
+					<li>If the patient is a twin, DO record the hour, minute, or second for DOB, if known. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section-header" id="section3.3" name="section3.3">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<h2><span class="section-number">3.3</span>Address</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<span class="highlight">
+					<p>Address fields capture the current and historical location of a patient’s residence.</p>
+				</span>
+				<p>Generally, address fields should follow the United States Postal Service (USPS) – <a href="http://pe.usps.com/text/pub28/welcome.htm" rel="noopener noreferrer" target="_blank">Postal Addressing Standards</a>:</p>
+				<p>Address Line 1:  		House Number and Street Name</p>
+				<p>Address Line 2:  	 	Suite #, Apartment #, etc.</p>
+				<p>City, State and ZIP+4 Code (Note:  city, state and zip in separate fields)</p>
+
+				<h3>Dos and Don’ts for Recording Address</h3>
+				<ul>
+					<li>DO use the US Postal Service standard abbreviations for street suffix.  Commonly used <span id="show_ad" style="cursor: pointer; background-color: orange;">address abbreviations</span> include the following:
+					<div id="addresses">		
+						<ul>
+							<li>Alley - ALY</li>
+							<li>Avenue – AVE</li>
+							<li>Bypass – BYP</li>
+							<li>Center – CTR</li>
+							<li>Circle – CIR</li>
+							<li>Court – CT</li>
+							<li>Crossing – XING</li>
+							<li>Drive – DR</li>
+							<li>Expressway – EXPY</li>
+							<li>Falls – FLS</li>
+							<li>Field – FLD</li>
+							<li>Freeway – FWY</li>
+							<li>Gateway – GTWY</li>
+							<li>Green – GRN</li>
+							<li>Heights – HTS</li>
+							<li>Highway – HWY</li>
+							<li>Junction – JCT</li>
+							<li>Key – KY</li>
+							<li>Knoll – KNL</li>
+							<li>Landing – LNDG</li>
+							<li>Manor – MNR</li>
+							<li>Meadow – MDW</li>
+							<li>Mill – ML</li>
+							<li>Mountain – MTN</li>
+							<li>Overpass – OPAS</li>
+							<li>Parkway – PKWY</li>
+							<li>Plaza – PLZ</li>
+							<li>Rapid – RPD</li>
+							<li>River – RIV</li>
+							<li>Road – RD</li>
+							<li>Route – RTE</li>
+							<li>Square – SQ</li>
+							<li>Station – STA</li>
+							<li>Street – ST</li>
+							<li>Terrace – TER</li>
+							<li>Turnpike – TPKE</li>
+							<li>Vista – VIS</li>
+							<li>Way - WAY</li>
+						</ul>
+					</div>
+					</li>
+					<li>DO verify the patient’s address using his/her government issued ID or a utility bill or other mailing. </li>
+					<li>DO NOT use any punctuation in the street or city fields.  Do use a hyphen in the ZIP code field when using the ZIP+4.</li>
+					<li>DO record and maintain historical addresses.</li>
+					<li>If an existing patient provides an address that does not match an existing record, DO ask the patient: “What are your former addresses?”</li>
+					<li>If a patient is homeless, DO use the practice’s billing address for the patient’s address.</li>
+					<li>DO use the USPS format for capturing international addresses. The bottom line of the address should show only the COUNTRY name, written in full (no abbreviations) and preferably in capital letters. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section-header" id="section3.4" name="section3.4">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<h2><span class="section-number">3.4</span>Phone Number</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<span class="highlight">
+					<p>Phone numbers include a numerical code to dial a patient’s mobile/cell phone, home phone, and/or work phone.</p>
+				</span>
+				<p>Generally, enter a patient’s phone number according to the North American Numbering Plan (NANP).  The number should be 10 digits including the patient’s area code (XXX) XXX-XXXX.</p>
+
+				<h3>Dos and Don’ts for Recording Phone Number</h3>
+				<ul>
+					<li>DO ask patients if their phone number is a home, office, or cell/mobile number and indicate for each number if it is primary or secondary.  DO record the phone number in the corresponding phone type field in your system.</li>
+					<li>For emergency contact information, DO include the phone type and primary and secondary fields.</li>
+					<li>DO ask patients to verify their phone number during every patient encounter.</li>
+					<li>For international phone numbers, DO use a dropdown for Country name and choose the appropriate country.</li>
+					<li>If a patient is unable to provide a primary phone number, DO enter 111-111-1111 to indicate the phone number is unknown.  DO NOT leave the field blank.</li>
+					<li>If an existing patient provides a phone number that does not match an existing record, DO ask the patient: “Are there any phone numbers you once had but no longer use or no longer have?</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section-header" id="section3.5" name="section3.5">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<h2><span class="section-number">3.5</span>Sex and Gender</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<p><b>Sex</b> – a person’s biological status referring to their genetic, hormonal, anatomical, and psychological characteristics of male, female, or intersex.</p>  
+				<p><b>Gender</b> – a person’s attitudes, feelings, and behaviors associated with their biological sex.</p> 
+				<p><b>Gender Identity</b> – a person’s basic sense of being male, female, or other gender (for example, transgender or gender queer). This may be the same or different from their sex assigned at birth.</p>
+
+				<h3>Dos and Don’ts for Recording Sex and Gender</h3>
+				<div class="row">
+				<div class="grid-4">
+					<div class="flip3d_y">
+						<div class="back">Record both Sex and Gender in separate fields.</div>
+						<div class="front"><img src="{{base.siteurl}}/assets/img/green_do.png" alt=""></div>
+					</div>
+				</div>
+
+				<div class="grid-4">
+					<div class="flip3d_y">
+						<div class="back">Record both Sex and Gender in separate fields.</div>
+						<div class="front"><img src="{{base.siteurl}}/assets/img/green_do.png" alt=""></div>
+					</div>
+				</div>
+
+				<div class="grid-4">
+					<div class="flip3d_y">
+						<div class="back">Assume the patient’s sex based on visual appearance.</div>
+						<div class="front"><img src="{{base.siteurl}}/assets/img/donot3.png" alt=""></div>
+					</div>
+				</div>
+				</div>
+
+
+
+
+
+
+				<ul>
+					<li>DO record both Sex and Gender in separate fields.</li>
+					<li>DON’T assume the patient’s sex based on visual appearance.  DO check identification for patient’s sex.</li>
+					<li>In the absence of government identification or physician documentation, DO ask the patient their sex at birth.</li>
+					<li>If a patient is not available, and their identification is also unavailable, DO record the sex as unknown.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 {% include upper-footer.html %}
