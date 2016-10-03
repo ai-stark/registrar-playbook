@@ -1,5 +1,17 @@
 $(window).on('load', function(){
 
+	$('#patient_name_flip').on('click', function(event){
+		event.preventDefault();
+		$('.flip3d_y').toggleClass('hovered');
+	});
+
+	$('#dob_flip').on('click', function(event){
+		event.preventDefault();
+		$('.flip3d_y').toggleClass('hovered');
+	});
+
+
+
 
 //controls the arrows and the nav expansion
 //using the arrow button should not change the content being viewed only expand and collapse nav
