@@ -1,14 +1,5 @@
 $(window).on('load', function(){
 
-	$('#patient_name_flip').on('click', function(event){
-		event.preventDefault();
-		$('.flip3d_y').toggleClass('hovered');
-	});
-
-	$('#dob_flip').on('click', function(event){
-		event.preventDefault();
-		$('.flip3d_y').toggleClass('hovered');
-	});
 
 
 

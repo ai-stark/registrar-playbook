@@ -58,6 +58,14 @@ body p{
 	display: none;
 }
 
+.print-panel{
+	display: block;
+}
+
+.print-panel img{
+	margin-bottom: 30px;
+}
+
 .upper-footer, .footer{
 	display: none;
 }
@@ -126,3 +134,4 @@ body p{
 .print-spacer-150{
 	height: 150px;
 }
+
