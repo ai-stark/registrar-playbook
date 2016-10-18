@@ -1,5 +1,5 @@
 .chapter1-billboard{
-	background-image: url('../../assets/img/first_page.jpg');
+	background-image: url('../../assets/img/bg-chapter-1.jpg');
 	background-position: 15% 35%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,9 +40,6 @@
 @include breakpoint($medium){
 	.highlight{
 		width: 17em;
-		//border-top: 3px solid $blue;
-		//border-bottom: 3px solid $blue;
-		//float: right;
 		padding: 1em 0;
 		margin: 0 0 1em 1.3em;
 		p{
@@ -116,20 +113,13 @@
 
 .video-slideout{
 	position: relative;
-	//display: none;
-	//opacity: 0;
-	//transition: opacity 6s;
 }
-
-
-
 
 .video-buttons:after{
 	content: "";
 	display: table;
 	clear: both;
 }
-
 
 .video-buttons .grid-4{
 	padding-right: 0;
@@ -146,17 +136,12 @@
 	}
 }
 
-
 @include breakpoint($medium-2){
 	.video-buttons .grid-4{
 		padding-right: 1em;
 		padding-bottom: 0;
 	}
 }
-
-
-
-
 
 #video1{
 	position: absolute;
@@ -172,8 +157,6 @@
 	position: absolute;
 	display: none;
 }
-
-
 
 .embeded-video{
 	padding: 1em 0;

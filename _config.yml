@@ -1,9 +1,10 @@
 baseurl: /registrar-playbook
+
 exclude: ['README.md']
 
 sass:
  sass_dir: assets/css
 
-
-
 permalink: pretty
+
+a: https://www.healthit.gov/registrar-playbook/
