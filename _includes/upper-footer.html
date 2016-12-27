@@ -1,5 +1,6 @@
 <!-- get list of only the pages with an html extention and put them in navigation order-->
 {% assign next_links = site.html_pages | sort: 'navigation_weight' %}
+{% assign next_to_last = next_links | size | minus: 2 %}
 
 <div class="content upper-footer">
 	<div class="row">
@@ -7,10 +8,9 @@
 			<div class="next">
 				<p class="text-center">
 				
-				
 				{% for n in next_links %}
 					<!-- find the currently displayed page -->
-					{% if n.title == page.title %}
+					{% if n.title == page.title and n.title != next_links[next_to_last].title %}
 						<!-- only enter if this is not the last page -->
 						{% unless forloop.last %}
 							<!-- forloop.index starts at one so this is displaying the page after current -->
@@ -26,7 +26,9 @@
 
 				</p>
 			</div>
-			{% include join_conversation.html %}
+			{% if page.title != "Share your feedback" %}
+				{% include join_conversation.html %}
+			{% endif %}
 		</div>
 	</div>
 </div>
