@@ -1,4 +1,5 @@
-baseurl: /playbook/registrar
+#baseurl: /playbook/registrar
+baseurl: /registrar
 
 exclude: ['README.md']
 
@@ -7,4 +8,5 @@ sass:
 
 permalink: pretty
 
-absolute: https://www.healthit.gov/playbook/registrar/
+#absolute: https://www.healthit.gov/playbook/registrar/
+absolute: https://www.healthit.gov/registrar/
